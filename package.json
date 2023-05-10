@@ -1,0 +1,28 @@
+{
+  "name": "toolbox-back-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jonathan Tovar",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.11"
+  },
+  "scripts": {
+    "start:dev": "standard && nodemon index.js",
+    "start:prod": "node index.js",
+    "test": "standard && mocha",
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "standard": "^17.0.0"
+  },
+  "standard": {
+    "ignore": [
+      "/test/**/*.js"
+    ]
+  }
+}
